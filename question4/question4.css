@@ -1,0 +1,23 @@
+#boxBack {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#boxBack.show {
+  display: flex;
+}
+
+#boxWrap {
+  min-width: 320px;
+  max-width: 600px;
+  padding: 10px;
+  background: #fff;
+}
