@@ -32,6 +32,7 @@ a {
 .nav-logo {
   width: 12rem;
   border-radius: 1rem;
+  margin-right: 23rem;
 }
 
 .nav-list-main {
@@ -73,36 +74,89 @@ a {
 .header {
   display: flex;
   background-color: #672ac1;
-  padding: 8rem 16rem;
+  padding: 9rem 16rem;
 }
 
-.header-one {
+.first-header {
   display: inherit;
   flex-direction: column;
   color: white;
   justify-content: space-between;
   align-items: flex-start;
   gap: 3rem;
+  margin-right: 10rem;
 }
 
-.header-one h1 {
-  font-size: 8rem;
+.first-header h1 {
+  font-size: 6rem;
   font-weight: 400;
 }
-.header-one p {
+.first-header p {
   font-size: 2rem;
   color: #d7c5ed;
   font-weight: 300;
   line-height: 1.4;
 }
 
-.header-image {
+.second-header-image {
   width: 55rem;
 }
 
-.header-one-link {
+.first-header-link {
   background-color: #45b6ee;
   padding: 2rem 3rem;
   border-radius: 4px;
   font-size: 1.6rem;
+}
+/* ---- End Header Section ---- */
+
+/* ---- Main Section ---- */
+.main-section {
+  background-color: white;
+  padding: 16rem 8rem 16rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: inherit;
+}
+
+.main-section img {
+  width: 65rem;
+  border-radius: 20px;
+}
+
+.first-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.first-main-section h2 {
+  font-size: 4rem;
+}
+.first-main-section h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.first-main-section p {
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.first-main-section-side {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.first-flesh {
+  color: #e48b38;
+  font-size: 32px;
+}
+.second-flesh {
+  color: #5dbd14;
+  font-size: 32px;
+}
+.third-flesh {
+  color: #3b83f0;
+  font-size: 32px;
 }
