@@ -13,3 +13,49 @@ body {
   font-size: 62.5%;
   font-family: sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #672ac1;
+  font-size: 2rem;
+  padding: 4rem;
+}
+
+.nav-logo {
+  width: 12rem;
+  border-radius: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+.nav-list-item {
+  padding: 0 1rem;
+}
+
+.nav-list-item a {
+  color: #d7c5ed;
+}
+
+.nav-list-item:first-child a {
+  color: #41b4ee;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #41b4ee;
+}
+
+.nav-trial {
+  background-color: #45b6ee;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
