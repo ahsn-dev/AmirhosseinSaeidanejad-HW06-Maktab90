@@ -19,6 +19,7 @@ a {
   color: white;
 }
 
+/* ---- Nav Section ---- */
 .nav {
   display: flex;
   justify-content: space-around;
@@ -33,10 +34,16 @@ a {
   border-radius: 1rem;
 }
 
+.nav-list-main {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
   font-size: 1.6rem;
+  font-weight: 300;
 }
 
 .nav-list-item {
@@ -56,6 +63,46 @@ a {
 .nav-trial {
   background-color: #45b6ee;
   padding: 1.5rem 2rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  margin-left: 4rem;
+}
+/* ---- End of Nav Section ---- */
+
+/* ---- Header Section ---- */
+.header {
+  display: flex;
+  background-color: #672ac1;
+  padding: 8rem 16rem;
+}
+
+.header-one {
+  display: inherit;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.header-one h1 {
+  font-size: 8rem;
+  font-weight: 400;
+}
+.header-one p {
+  font-size: 2rem;
+  color: #d7c5ed;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.header-image {
+  width: 55rem;
+}
+
+.header-one-link {
+  background-color: #45b6ee;
+  padding: 2rem 3rem;
   border-radius: 4px;
   font-size: 1.6rem;
 }
