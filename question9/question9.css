@@ -160,3 +160,75 @@ a {
   color: #3b83f0;
   font-size: 32px;
 }
+/* ---- End Main Section ---- */
+
+/* ---- Feature Section ---- */
+.feature {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.feature h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1.4;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 24rem;
+  height: 38rem;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 14rem;
+  height: 14rem;
+}
+
+.feature-card h4 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.feature-card p {
+  font-size: 1.4rem;
+}
+
+.feature-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature-card-link {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #4ab7ee;
+  border-radius: 50%;
+}
+
+.feature-card-link::after {
+  content: "\2794";
+  display: block;
+  color: #4ab7ee;
+  font-size: 16px;
+  padding-top: 5px;
+}
+/* ---- End Feature Section ---- */
+
+/* ---- plans Section ---- */
