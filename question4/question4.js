@@ -1,23 +1,25 @@
-// function showNotification(obj) {
-//   const top = prompt("enter your top position: ");
-//   const right = prompt("enter your right position: ");
-//   const message = prompt("enter your message: ");
-//   obj.top = top;
-//   obj.right = right;
-//   obj.message = message;
-// }
+const makeObject = () => {
+  let top = prompt("Please Enter Top:");
+  let left = prompt("Please Enter Left:");
+  let html = prompt("Please Enter Html:");
+  let className = prompt("Please Enter ClassName:");
+  html != ""
+    ? showNotification({ top, left, html, className })
+    : alert("not valid html");
+};
 
-// showNotification({
-//   top: "10px",
-//   right: "10px",
-//   message: "Hello World",
-// });
+const showNotification = (obj) => {
+  const notificationBody = document.createElement("div");
+  obj.className != "" ? notificationBody.classList.add(obj.className) : null;
+  const notificationMessage = document.createTextNode(obj.html);
+  notificationBody.appendChild(notificationMessage);
+  const mainBody = document.getElementById("main");
+  mainBody.appendChild(notificationBody);
+  notificationBody.style.position = "absolute";
+  notificationBody.style.left = obj.left + "px";
+  notificationBody.style.top = obj.top + "px";
+  notificationBody.style.border = "2px solid red";
+  notificationBody.style.padding = "20px";
+};
 
-function dbox(msg) {
-  if (msg != undefined) {
-    document.getElementById("boxTxt").innerHTML = msg;
-    document.getElementById("boxBack").classList.add("show");
-  } else {
-    document.getElementById("boxBack").classList.remove("show");
-  }
-}
+makeObject();
