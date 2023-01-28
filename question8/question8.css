@@ -1,102 +1,85 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 img {
   width: 100px;
   height: 100px;
 }
-
 .box {
+  width: 700px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .box1 {
+  width: 900px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   position: relative;
   right: 20px;
   top: 45px;
-  width: 900px;
 }
-
-.main-box1 {
+.container1 {
+  display: flex;
+  /* margin-top: 40px; */
   position: relative;
   left: 70px;
   top: 70px;
-  display: flex;
 }
-
-.main-box2 {
+.container2 {
   display: flex;
   margin-top: 40px;
 }
-
-.main-box3 {
+.container3 {
+  display: flex;
   margin-top: 40px;
   position: relative;
   left: 70px;
   bottom: 70px;
-  display: flex;
 }
-
-.main-box4 {
+.container4 {
   display: flex;
   position: relative;
   bottom: 100px;
 }
-
-.main-box5 {
+.container5 {
   display: flex;
   position: relative;
   left: 70px;
   bottom: 130px;
 }
-
-.main-box6 {
+.container6 {
   display: flex;
   position: relative;
   bottom: 160px;
 }
-
-.square {
+.item {
   width: 100px;
   height: 100px;
   transform: rotate(45deg);
   margin-left: 40px;
 }
-
-.square1 {
-  background-color: blue;
+.item1 {
+  background-color: #3b82f6;
 }
-
-.square2 {
-  background-color: green;
+.item2 {
+  background-color: #23c55e;
 }
-
-.square3 {
-  background-color: yellow;
+.item3 {
+  background-color: #e9b309;
 }
-
-.square4 {
-  background-color: red;
+.item4 {
+  background-color: #f04444;
 }
-
-.square5 {
-  background-color: pink;
+.item5 {
+  background-color: #eb489b;
 }
